@@ -1,7 +1,5 @@
 <h1> Challenge: Amigo Secreto</h1>
 
-# Amigo Secreto App
-
 En este proyecto, desarrollaremos una aplicación web simple para realizar un sorteo de "amigo secreto". Los usuarios podrán agregar nombres de amigos a una lista y luego realizar un sorteo aleatorio para determinar quién será el amigo secreto.
 
 ## Funcionalidades
@@ -22,4 +20,4 @@ En este proyecto, desarrollaremos una aplicación web simple para realizar un so
 
 ## Instalación
 
-1. Abre el archivo `https://yonatancorales.github.io/challenge-amigo-secreto_esp-main/` en tu navegador web.
+[Visualiza el challenge en tu navegador](https://yonatancorales.github.io/challenge-amigo-secreto_esp-main/)
