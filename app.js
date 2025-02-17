@@ -46,7 +46,25 @@ function actualizarLista(){
         lista.appendChild(nuevoAmigo);
       }
 }
+
 //Llamar a la función cuando se cargue la página
 window.onload = function() {
   actualizarLista();
+}
+
+//Funcion para sortear los amigos
+function sortearAmigo(){
+    if(amigos.length===0){
+        alert("La lista de amigos esta vacia, ingrese como minimo 2 nombres");
+        return;
+    }else{
+        let indiceAleatorio = Math.floor(Math.random() * amigos.length)
+
+        //Obtener el nombre sorteado
+        let nombreSorteado = amigos[indiceAleatorio];
+
+        //Mostrar el resultado
+        let resultado = document.getElementById("resultado");
+        resultado.innerHTML= `El amigo sorteado es ${nombreSorteado}.`
+    }
 }
