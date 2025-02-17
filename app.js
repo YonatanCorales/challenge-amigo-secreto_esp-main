@@ -55,7 +55,7 @@ window.onload = function() {
 //Funcion para sortear los amigos
 function sortearAmigo(){
     if(amigos.length===0){
-        alert("La lista de amigos esta vacia, ingrese como minimo 2 nombres");
+        alert("La lista de amigos esta vacia, ingrese como minimo 1 nombre");
         return;
     }else{
         let indiceAleatorio = Math.floor(Math.random() * amigos.length)
@@ -67,4 +67,21 @@ function sortearAmigo(){
         let resultado = document.getElementById("resultado");
         resultado.innerHTML= `El amigo sorteado es ${nombreSorteado}.`
     }
+}
+
+//Funcion para reiniciar el juego desde cero
+function reiniciarSorteo(){
+    // Limpiar el arreglo de amigos
+  amigos = [];
+
+  // Limpiar la lista de amigos en la pantalla
+  let listaAmigos = document.getElementById('listaAmigos');
+  listaAmigos.innerHTML = '';
+
+  // Limpiar el resultado en la pantalla
+  let resultado = document.getElementById('resultado');
+  resultado.innerHTML = '';
+
+  // Actualizar la lista de amigos en la pantalla
+  actualizarLista();
 }
